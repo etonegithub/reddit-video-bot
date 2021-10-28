@@ -1,4 +1,9 @@
 import praw
+from pymongo import MongoClient
+
+client = MongoClient("mongodb+srv://admin:<password>@reddit-video-data.qaodr.mongodb.net/"
+                     "myFirstDatabase?retryWrites=true&w=majority")
+
 
 # PERSONAL USE SCRIPT TOKEN
 # 2AWi3DM-2NNfX0Gk5MJNEw
