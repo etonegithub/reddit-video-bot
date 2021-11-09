@@ -1,7 +1,8 @@
-import os, shutil
+import os
+import shutil
 
 
-def is_dir_empty(dir_path):
+def is_dir_empty(dir_path: str) -> bool:
     if os.path.isdir(dir_path):
         if not os.listdir(dir_path):
             return True
@@ -12,7 +13,7 @@ def is_dir_empty(dir_path):
         return False
 
 
-def clear_dir(dir_path):
+def clear_dir(dir_path: str) -> None:
     for file_name in os.listdir(dir_path):
         file_path = os.path.join(dir_path, file_name)
         try:
